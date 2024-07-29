@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        div + div {
+            margin-top: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: .5em;
+        }
+        input {
+            border: 1px solid #ccc;
+            padding: .5em;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 0.7em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: .3em;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+    </div>
+    <div>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+        <button type="submit">Register</button>
+    </div>
+</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Scores</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #134f03;
+            color:white;
+        }
+        caption {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+    </style>
+
+
+
+<table>
+    <caption>Assignment Scores</caption>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>ASSIGNMENT 1 SCORE</th>
+            <th>ASSIGNMENT 2 SCORE</th>
+            <th>ASSIGNMENT 3 SCORE</th>
+            <th>AVERAGE SCORE</th>
+            <th>TOTAL SCORE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mr. Mbakara</td>
+            <td>10</td>
+            <td>9</td>
+            <td>8</td>
+            <td>=AVERAGE(B2:D2)</td>
+            <td>=SUM(B2:D2)</td>
+        </tr>
+        <tr>
+            <td>Mr. Essien</td>
+            <td>10</td>
+            <td>10</td>
+            <td>9</td>
+            <td>=AVERAGE(B3:D3)</td>
+            <td>=SUM(B3:D3)</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+</body>
+</html>
