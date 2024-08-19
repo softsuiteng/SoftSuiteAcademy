@@ -12,12 +12,6 @@ async function findCar(e) {
     return;
   }
 
-  // Sample: https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/honda/modelyear/2015?format=json
-
-  // const url =
-  //   "https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/" +
-  //   make + "/modelyear/" + year + "?format=json";
-
   const url = `https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/${make}/modelyear/${year}?format=json`;
 
   try {
