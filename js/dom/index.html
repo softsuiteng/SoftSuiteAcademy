@@ -17,13 +17,30 @@
       font-weight: 400;
       font-style: normal;
     }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    caption {
+      font-size: 1.2em;
+      margin: 10px 0;
+      text-align: center;
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
-  <h1>
-    What car is that?
-  </h1>
+  <h1>What car is that?</h1>
 
   <form>
     <label for="manufacturer">Manufacturer:</label>
@@ -36,6 +53,7 @@
   </form>
 
   <table>
+    <caption>Car Model Information Table</caption>
     <thead>
       <tr>
         <th>Manufacturer</th>
