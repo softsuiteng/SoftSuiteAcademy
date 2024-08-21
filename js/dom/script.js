@@ -15,7 +15,7 @@ async function findCar(e) {
   const url = `https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformakeyear/make/${make}/modelyear/${year}?format=json`;
 
   try {
-    models.innerHTML = '<tr><td colspan="2>Searching...</td></tr>';
+    models.innerHTML = '<tr><td colspan="2">Searching...</td></tr>';
 
     const response = await fetch(url);
     if (!response.ok) {
@@ -50,6 +50,7 @@ async function findCar(e) {
   console.log(url);
 }
 
-
-
-form.addEventListener('submit', findCar);
+// Wrapping the async function in a non-async function
+form.addEventListener('submit', function (e) {
+  findCar(e).catch(error => console.error(error));
+});
