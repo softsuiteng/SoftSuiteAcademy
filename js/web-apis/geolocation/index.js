@@ -26,6 +26,12 @@ function geoFindMe() {
   }
 }
 
+function successCallback(position) {
+  console.log(position);
+}
+
+navigator.geolocation.getCurrentPosition(successCallback);
+
 document
   .querySelector("#find-me")
   .addEventListener("click", geoFindMe);
