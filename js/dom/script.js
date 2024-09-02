@@ -31,8 +31,7 @@ async function findCar(e) {
 
     let newHtml = '';
 
-    for (let i = 0; i < jsonResponse.Results.length; i++) {
-      const car = jsonResponse.Results[i];
+    for (const car of jsonResponse.Results) {
 
       newHtml += `
         <tr>
